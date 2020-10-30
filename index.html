@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Orrin">
+        <meta name="description" content="A game of rock, paper, scissors.">
+        <meta name="keywords" content="Rock, paper, scissors, game">
+        <title>Rock, Paper, Scissors</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" 
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="rockpaperscissors.js" defer></script>
+    </head>
+    <body>
+        <div class="computer-overlay no-show">
+            <h3>Computer wins!</h3>
+            <button type="button">Play Again</button>
+            <button type="button">Return Home</button>
+        </div>
+        <div class="player-overlay no-show">
+            <h3>You win!</h3>
+            <button type="button">Play Again</button>
+            <button type="button">Return Home</button>
+        </div>
+        <div class="both-overlay no-show">
+            <h3>Tie Game!</h3>
+            <button type="button">Play Again</button>
+            <button type="button">Return Home</button>
+        </div>
+        <div class="welcome yes-show">
+            <div class="welcome-content">
+                <h1>Rock</h1>
+                <h1>Paper</h1>
+                <h1>Scissors</h1>
+                <button type="button">Play Game</button>
+            </div>
+        </div>
+        <div class="arena">
+            <div class="computer-side">
+                <h2>Computer</h2>
+                <div class="computer-choices">
+                    <button type="button" id="comp-rock-button"><i class="far fa-hand-rock"></i></button>
+                    <button type="button" id="comp-paper-button"><i class="far fa-hand-paper"></i></button>
+                    <button type="button" id="comp-scissors-button"><i class="far fa-hand-scissors"></i></button>
+                    
+                    <div class="comp-choice-rock no-show"><i class="far fa-hand-rock"></i>Rock</div>
+                    <div class="comp-choice-paper no-show"><i class="far fa-hand-paper"></i>Paper</div>
+                    <div class="comp-choice-scissors no-show"><i class="far fa-hand-scissors"></i>Scissors</div>
+                </div>
+            </div>
+            <div class="player-side">
+                <h2>You</h2>
+                <div class="player-choices">
+                    <button type="button" id="rock-button"><i class="far fa-hand-rock"></i></button>
+                    <button type="button" id="paper-button"><i class="far fa-hand-paper"></i></button>
+                    <button type="button" id="scissors-button"><i class="far fa-hand-scissors"></i></button>
+
+                    <div class="choice-rock no-show"><i class="far fa-hand-rock"></i>Rock</div>
+                    <div class="choice-paper no-show"><i class="far fa-hand-paper"></i>Paper</div>
+                    <div class="choice-scissors no-show"><i class="far fa-hand-scissors"></i>Scissors</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
